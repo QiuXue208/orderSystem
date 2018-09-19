@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }   
+            body {
+                min-height: 100vh;
+                border: 1px solid grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            div.formContainer{
+                border:3px solid #0269FD;
+                border-top:40px solid #0269FD;
+                padding:20px;
+                margin:20px;
+                position:relative;
+                border-radius:3px 2px;
+            }
+            div.shadow{
+                box-shadow: 0px -2.5px 0px 0px rgba(42,142,254,0.76);
+                width: 303px;
+                border-radius: 2px;
+                height: 8px;
+                position: absolute;
+                left: -2px;
+                top: -38px;
+            }
+            h4{
+                position:absolute;
+                left:15px;
+                top:-30px;
+                color:white;  
+                font-weight:normal;           
+            }
+            div.show{
+                margin:10px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            div.show > label{
+                height:25px;
+                line-height:23px;
+                margin-right:10px;
+                display:inline-block;
+                width:4em;
+                text-align:justify;
+            }
+            div.show > label::after{
+                content:'';
+                display:inline-block;
+                width:100%;
+            }
+            input.text,
+            input.password{
+                border:1px solid #BDCEDE;
+            }
+            input.submit,
+            input.reset{
+                padding:0 15px;
+                border:1px solid #003C74;
+                border-radius:3px;
+                background:#F5F5F2;
+                margin:10px 20px;;
+            }
+            input:focus{
+                outline:none;
+            }
+        </style>
+</head>
+
+<body>
+        <div class="formContainer">
+                <div class="shadow"></div>
+                <h4>登录窗体</h4>
+            <form id="signInForm">
+                <div class="show">
+                    <label for="">登录名</label>
+                    <input type="text" class="text" name="email">
+                </div>
+                <div class="show">
+                    <label for="">密码</label>
+                    <input type="password" class="password" name="password">
+                </div>
+                <div class="show">
+                    <input type="submit" class="submit" value="登录">
+                    <input type="reset" class="reset" value="取消">
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
