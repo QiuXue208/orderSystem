@@ -78,6 +78,16 @@
             input:focus{
                 outline:none;
             }
+            .icon {
+                width: 1.2em;
+                height: 1.2em;
+                vertical-align: -0.15em;
+                fill: currentColor;
+                overflow: hidden;
+                position:absolute;
+                right:7px;
+                top:-29px;
+    }
         </style>
 </head>
 
@@ -85,6 +95,9 @@
         <div class="formContainer">
                 <div class="shadow"></div>
                 <h4>登录窗体</h4>
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-cancelrefund"></use>
+            </svg>
             <form id="signInForm">
                 <div class="show">
                     <label for="">登录名</label>
@@ -100,6 +113,7 @@
                 </div>
             </form>
         </div>
+        <script src="//at.alicdn.com/t/font_845214_v7sivar96o.js"></script>
 </body>
 
 </html>
